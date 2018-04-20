@@ -37,7 +37,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X_train, Y_train, test_size 
 
 
 
-#one hot encoding of labels (not necessary)
+#one hot encoding of labels (not necessary since binary class but needed for multiclass classification)
 labels_train = (np.arange(2) == Y_train[:,None]).astype(np.float32)
 
 labels_test = (np.arange(2) == Y_test[:,None]).astype(np.float32)
