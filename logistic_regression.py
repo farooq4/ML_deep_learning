@@ -129,7 +129,7 @@ def evaluate_algorithm(dataset, algorithm, n_folds, coef_selector, *args):
 	return scores, error_early
 
 
-filename = 'HW2_dataset.csv'
+filename = 'dataset.csv'
 data = read_csv(filename)
 data.remove(data[0])
 for i in range(len(data[0])):
